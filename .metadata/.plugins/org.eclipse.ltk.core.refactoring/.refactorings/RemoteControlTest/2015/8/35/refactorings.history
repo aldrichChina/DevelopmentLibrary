@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;SingleFragmentActivity.java&apos; to &apos;PhotoGalleryTest1/src/com.jia.photogallerytest1&apos;&#x0D;&#x0A;- Original project: &apos;RemoteControlTest&apos;&#x0D;&#x0A;- Destination element: &apos;PhotoGalleryTest1/src/com.jia.photogallerytest1&apos;&#x0D;&#x0A;- Original element: &apos;com.jia.remotecontroltest.SingleFragmentActivity.java&apos;" description="Copy compilation unit" destination="=PhotoGalleryTest1/src&lt;com.jia.photogallerytest1" element1="/src&lt;com.jia.remotecontroltest{SingleFragmentActivity.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1440422177054" units="1" version="1.0"/>
+</session>

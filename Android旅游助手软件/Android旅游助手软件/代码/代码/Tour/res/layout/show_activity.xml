@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rela_login_main"
+    android:layout_width="wrap_content"
+    android:layout_height="fill_parent"
+    android:background="@color/mybackground" >
+
+    <RelativeLayout
+        android:id="@+id/title_true"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/skin_header_bar_bg"
+        android:gravity="center" >
+
+        <TextView
+            android:id="@+id/tv_select_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="酒店查看"
+            android:textColor="@color/black"
+            android:textSize="20dp" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/image_show"
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:layout_below="@+id/title_true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/su15" />
+
+    <TextView
+        android:id="@+id/tv_show_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/image_show"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:text="TextView"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_size"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_show_q"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tv_show_name"
+        android:layout_below="@+id/tv_show_name"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:text="预定此酒店?，需支付1200元"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_size" />
+
+    <Button
+        android:id="@+id/btn_show_play"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/tv_show_q"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="34dp"
+        android:background="@drawable/button_logout"
+        android:text="确认付款"
+        android:textColor="@color/whites"
+        android:textSize="18.0sp" />
+
+    <RelativeLayout
+        android:id="@+id/relat_add_message"
+        android:layout_width="fill_parent"
+        android:layout_height="48.0dip"
+        android:layout_below="@+id/btn_show_play"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="14dp"
+        android:background="@drawable/more_item"
+        android:focusable="true" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:gravity="center_vertical"
+            android:text="景点留言"
+            android:textColor="@color/black"
+            android:textSize="18.0sp" />
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/activity_vertical_margin"
+            android:src="@drawable/mm_submenu_pressed" />
+    </RelativeLayout>
+
+</RelativeLayout>

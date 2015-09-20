@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="140dip"
+        android:paddingRight="50dip"
+        android:paddingTop="10dip"
+        android:text="注册"
+        android:textColor="#FFFFFF"
+        android:textSize="22dip" />
+
+    <EditText
+        android:id="@+id/register_username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dip"
+        android:layout_marginRight="20dip"
+        android:layout_marginTop="20dip"
+        android:height="40dip"
+        android:hint="用户名" />
+
+    <EditText
+        android:id="@+id/register_passwd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dip"
+        android:layout_marginRight="20dip"
+        android:layout_marginTop="20dip"
+        android:height="40dip"
+        android:hint="密码" />
+
+    <Button
+        android:id="@+id/register_submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dip"
+        android:height="40dip"
+        android:text="确定"
+        android:textColor="#FFFFFF"
+        android:textSize="22dip"
+        android:width="70dip" />
+
+</LinearLayout>

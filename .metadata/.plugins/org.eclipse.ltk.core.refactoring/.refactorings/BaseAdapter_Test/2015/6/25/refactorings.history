@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Convert local variable &apos;com.jia.baseadapter_test.MainActivity.onCreate().myList&apos; in &apos;com.jia.baseadapter_test.MainActivity.onCreate()&apos; to field&#x0D;&#x0A;- Original project: &apos;BaseAdapter_Test&apos;&#x0D;&#x0A;- Original element: &apos;com.jia.baseadapter_test.MainActivity.onCreate().myList&apos;&#x0D;&#x0A;- Field name: &apos;myList&apos;&#x0D;&#x0A;- Initialize field in method&#x0D;&#x0A;- Declared visibility: &apos;private&apos;" description="Convert local variable &apos;myList&apos; to field" final="false" flags="2" id="org.eclipse.jdt.ui.promote.temp" initialize="1" input="/src&lt;com.jia.baseadapter_test{MainActivity.java" name="myList" selection="422 45" stamp="1434313165894" static="false" version="1.0" visibility="2"/>
+</session>

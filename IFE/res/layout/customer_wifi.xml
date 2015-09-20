@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="40dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/login_hn_ground" >
+
+        <ImageView
+            android:layout_width="70dip"
+            android:layout_height="39dip"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/logo_kong" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="80dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/customer_satisfaction_content_background"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/customer_wifi_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:gravity="center"
+                android:text="@string/customer_wifi_title"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="30dp"
+                android:scrollbarThumbVertical="@drawable/scrollbar" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp" >
+
+                    <TextView
+                        android:id="@+id/customer_wifi_detail"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginRight="25dp"
+                        android:lineSpacingMultiplier="1.5"
+                        android:text="@string/customer_wifi_detail"
+                        android:textColor="#000000"
+                        android:textSize="12sp" />
+
+                    <ListView
+                        android:id="@+id/wifi_list_show"
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_below="@id/customer_wifi_detail"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginRight="25dp"
+                        android:fadingEdge="none"
+                        android:footerDividersEnabled="false"
+                        android:scrollbarThumbVertical="@drawable/scrollbar"
+                        android:scrollbars="none" >
+                    </ListView>
+                </RelativeLayout>
+            </ScrollView>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/customer_wifi_submit"
+            android:layout_width="125dip"
+            android:layout_height="25dip"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/club_join_bt"
+            android:gravity="center"
+            android:text="@string/customer_confirm"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+</LinearLayout>

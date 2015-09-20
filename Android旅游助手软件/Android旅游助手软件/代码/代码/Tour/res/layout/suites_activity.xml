@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="fill_parent"
+     android:id="@+id/rela_login_main"
+    android:background="@color/mybackground" >
+<RelativeLayout
+        android:id="@+id/title_true"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:gravity="center"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/skin_header_bar_bg" >
+
+        <TextView
+            android:id="@+id/tv_select_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="酒店查看"
+            android:textColor="@color/black"
+            android:textSize="20dp" />
+    </RelativeLayout>
+
+<ListView
+    android:id="@+id/lv_suites"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_alignParentLeft="true"
+    android:layout_below="@+id/title_true"
+    >
+</ListView>
+
+</RelativeLayout>

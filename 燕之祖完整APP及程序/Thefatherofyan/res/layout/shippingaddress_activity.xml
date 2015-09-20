@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/shouyebj"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:id="@+id/shippingaddress_activity_returnbtn"
+            android:layout_width="15dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:src="@drawable/returnbtn" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="新建收货地址"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <EditText
+                android:id="@+id/shippingaddress_activity_consignee"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="收货人:" >
+
+                <requestFocus />
+            </EditText>
+
+            <EditText
+                android:id="@+id/ShippingAddress_Activity_phonenumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="手机号码:" />
+            <EditText
+                android:id="@+id/ShippingAddress_Activity_zipcode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="邮政编码:" />
+        </LinearLayout>
+
+      
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <EditText
+            android:id="@+id/ShippingAddress_Activity_province"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="省:" />
+
+        <EditText
+            android:id="@+id/ShippingAddress_Activity_city"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="市:" />
+
+        <EditText
+            android:id="@+id/ShippingAddress_Activity_county"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="县:" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/ShippingAddress_Activity_DetailedAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="详细地址:" />
+
+    <Button
+        android:id="@+id/btn_fk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="65dp"
+        android:background="@drawable/dzanbj"
+        android:text="保存并使用"
+        android:textSize="20sp" />
+
+</LinearLayout>

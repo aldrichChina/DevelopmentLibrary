@@ -1,0 +1,11 @@
+package com.jia.printer_jia;
+
+public class canonPrinter extends Printer{
+	void close(){
+		this.clean();
+		super.close();
+	}
+	void clean(){
+		System.out.println("clean()");
+	}
+}

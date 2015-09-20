@@ -1,0 +1,4 @@
+1439853656819	Rename type 'FirstService'
+1439854482982	Convert local variable 'bind' to field
+1439854486796	Convert local variable 'unbind' to field
+1439854489258	Convert local variable 'getServiceStatus' to field

@@ -1,0 +1,26 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/holo_blue_dark"
+    
+    tools:context=".IntentActivity" >
+
+    <Button
+        android:id="@+id/activity_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        
+        android:text="activity_1" />
+
+    <TextView
+        android:id="@+id/bj"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/activity_1"
+        android:layout_marginLeft="110dp"
+        android:layout_marginTop="76dp"
+        android:text="TextView" />
+
+</RelativeLayout>

@@ -1,0 +1,85 @@
+package com.jia.photogallerytest1;
+
+import java.util.ArrayList;
+
+import android.R.integer;
+import android.media.tv.TvContract.Programs;
+import android.os.AsyncTask;
+import android.os.Bundle;
+import android.support.v4.app.Fragment;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.AbsListView;
+import android.widget.AbsListView.OnScrollListener;
+import android.widget.ArrayAdapter;
+import android.widget.GridView;
+
+public class PhotoGalleryFragment extends Fragment {
+	private static final String TAG = "jia";
+	GridView mGridView;
+	ArrayList<GalleryItem>mItems;
+	private int current_page=1;
+	private int fetched_page=0;
+	@Override
+	public void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		setRetainInstance(true);
+		new FetchItemsTask().execute(current_page);
+	}
+
+	@Override
+	public View onCreateView(LayoutInflater inflater, ViewGroup container,
+			Bundle savedInstanceState) {
+		View v = inflater.inflate(R.layout.fragment_photo_gallery, container,
+				false);
+		mItems=new ArrayList<GalleryItem>();
+		mGridView = (GridView) v.findViewById(R.id.gridView);
+		mGridView.setOnScrollListener(new OnScrollListener() {
+			
+			@Override
+			public void onScrollStateChanged(AbsListView view, int scrollState) {
+				
+			}
+			
+			@Override
+			public void onScroll(AbsListView view, int firstVisibleItem,
+					int visibleItemCount, int totalItemCount) {
+				if(firstVisibleItem+visibleItemCount==totalItemCount&&totalItemCount>0&&current_page==fetched_page){
+					new FetchItemsTask().execute(current_page);
+					current_page++;
+				}
+			}
+		});
+		setupAdapter();
+		return v;
+	}
+	void setupAdapter(){
+		if(getActivity()==null||mGridView==null)return;
+		if(mItems!=null){
+			mGridView.setAdapter(new ArrayAdapter<GalleryItem>(getActivity(), android.R.layout.simple_gallery_item,mItems));
+		}else{
+			mGridView.setAdapter(null);
+		}
+	}
+	private class FetchItemsTask extends AsyncTask<Integer, Void, ArrayList<GalleryItem>> {
+
+		@Override
+		protected ArrayList<GalleryItem> doInBackground(Integer... params) {
+			/*try {
+				String result = new FlickrFetchr()
+						.getUrl("http://www.baidu.com");
+				Log.i(TAG, "Fetched contents of URL: " + result);
+			} catch (IOException e) {
+				Log.e(TAG, "Failed to fetch URL: ", e);
+			}*/
+			return new FlickrFetchr().fetchItems(params[0]);
+		//	return null;
+		}
+		@Override
+		protected void onPostExecute(ArrayList<GalleryItem> result) {
+			mItems=result;
+			setupAdapter();
+		}
+	}
+}

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;com.jia.接口.USBPhone&apos; to &apos;Phone&apos;&#x0D;&#x0A;- Original project: &apos;接口&apos;&#x0D;&#x0A;- Original element: &apos;com.jia.接口.USBPhone&apos;&#x0D;&#x0A;- Renamed element: &apos;com.jia.接口.Phone&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;USBPhone&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;com.jia.接口{USBPhone.java[USBPhone" matchStrategy="1" name="Phone" qualified="false" references="true" similarDeclarations="false" stamp="1433447066855" textual="false" version="1.0"/>
+</session>

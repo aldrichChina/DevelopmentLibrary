@@ -1,0 +1,36 @@
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <!-- <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:contentDescription="@string/hellomoon_description"
+        android:scaleType="centerInside"
+        android:src="@drawable/armstrong_on_moon" /> -->
+	<SurfaceView 
+	    android:id="@+id/hellomoon_surfaceView"
+	    android:contentDescription="@string/hellomoon_description"
+	    android:layout_width="320dp"
+	    android:layout_height="240dp"
+	    android:layout_gravity="center"
+	    />
+    <TableRow
+        android:layout_weight="0"
+        android:gravity="center|bottom" >
+
+        <Button
+            android:id="@+id/hellomoon_playButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/hellomoon_play" />
+
+        <Button
+            android:id="@+id/hellomoon_stopButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/hellomoon_stop" />
+    </TableRow>
+
+</TableLayout>

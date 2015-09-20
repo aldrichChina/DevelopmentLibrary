@@ -1,0 +1,157 @@
+﻿.history
+{
+    background-color:#2f2d2d;
+    box-shadow:0px 2px 5px 0px #878686 inset,0px 2px 1px 0px #101010;
+    min-height:120px;
+    width:100%;
+    padding:5px 10px 5px 10px;
+    color:#ffffff;
+    }
+.header
+{
+    height: 40px;
+    line-height: 36px !important;
+    border-bottom: 1px solid #fff;
+    position: relative;
+    }
+.airline
+{
+    position: absolute;
+    right: 0;
+    text-align: right;
+    color: #fff;
+    }
+.icon
+{
+    display: block;
+    float: left;
+    color: #fff;
+    margin: 15px 5px 0 0;
+    height: 50px;
+    }
+dd
+{
+    margin-top: 10px;
+    }
+#txtHeight
+{
+    float: left;
+    width: 140px;
+    height: 45px;
+    background-image: url("../../images/history_height.png");
+    background-repeat: no-repeat;
+    display: inline-block;
+    margin: 45px 0 0 0;
+    text-align: right;
+    }
+#txtHeight .label
+{
+    width: 100%;
+    height: 10px;
+    color: #ffffff;
+    display: block;
+    margin-top: -25px;
+    text-align: center;
+    margin-bottom: 27px;
+    text-shadow: none;
+    text-decoration: none;
+    }
+#txtHeight .value
+{
+    color: #ffffff;
+    margin-right: 50px;
+    }
+#txtSpeed
+{
+    float: left;
+    width: 140px;
+    height: 45px;
+    text-indent: 7px;
+    background-image: url("../../images/history_speed.png");
+    background-repeat: no-repeat;
+    display: inline-block;
+    margin: 45px 0 0 0;
+    text-align: right;
+    }
+#txtSpeed .label
+{
+    width: 100%;
+    height: 10px;
+    color: #ffffff;
+    display: block;
+    margin-top: -25px;
+    text-align: center;
+    margin-bottom: 27px;
+    text-shadow: none;
+    text-decoration: none;
+    }
+#txtSpeed .value
+{
+    color: #ffffff;
+    margin-right: 50px;
+    }
+#txtLocation
+{
+    float: left;
+    width: 180px;
+    height: 45px;
+    text-indent: 7px;
+    background-image: url("../../images/history_location.png");
+    background-repeat: no-repeat;
+    display: inline-block;
+    margin: 45px 0 0 0;
+    text-align: right;
+    }
+#txtLocation .label
+{
+    width: 100%;
+    height: 10px;
+    color: #ffffff;
+    display: block;
+    margin-top: -25px;
+    text-align: center;
+    margin-bottom: 27px;
+    text-shadow: none;
+    text-decoration: none;
+    }
+#txtLocation .value
+{
+    color: #ffffff;
+    margin-right: 40px;
+    }
+#btnPlaybackPrev
+{
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    background:url("../../images/history_previous.png") no-repeat;
+    border:0;
+    margin-top:40px;
+    }
+#btnPlaybackPrev:focus{
+    outline: 0;
+}
+#btnPlaybackStart
+{
+    width: 48px;
+    height: 48px;
+    padding: 0;
+    background:url("../../images/history_start.png") no-repeat;
+    border:0;
+    margin-top:35px;
+    }
+#btnPlaybackStart:focus{
+    outline: 0;
+}
+#btnPlaybackNext
+{
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    background:url("../../images/history_next.png") no-repeat;
+    border:0;
+    margin-top:40px;
+    }
+#btnPlaybackNext:focus{
+    outline: 0;
+}

@@ -1,0 +1,18 @@
+package com.jia.printer_jia;
+
+public class Test {
+	public static void main(String args[]){
+		int i=0;
+		if(i==0){
+			HPPrinter hpPrinter = new HPPrinter();
+			hpPrinter.open();
+			hpPrinter.printe("HpPrinte");
+			hpPrinter.close();
+		}else if(i==1){
+			canonPrinter canonPrinter = new canonPrinter();
+			canonPrinter.open();
+			canonPrinter.printe("CanonPrinte");
+			canonPrinter.close();
+		}
+	}
+}

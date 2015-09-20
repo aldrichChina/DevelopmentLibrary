@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="img_width">130dip</dimen>
+    <dimen name="img_height">190dip</dimen>
+    <dimen name="menu_width">200dip</dimen>
+    <dimen name="time_font_size">20sp</dimen>
+    <dimen name="category_little_size">35sp</dimen>
+    <dimen name="category_normal_size">20sp</dimen>
+    <dimen name="category_big_size">20sp</dimen>
+    <dimen name="module_bar_width">364dp</dimen>
+</resources>

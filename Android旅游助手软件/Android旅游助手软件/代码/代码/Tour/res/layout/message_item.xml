@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/mybackground" >
+
+    <RelativeLayout
+        android:id="@+id/rell_select_classroom"
+        android:layout_width="fill_parent"
+        android:layout_height="48.0dip"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="@dimen/padding"
+        android:background="@drawable/more_item"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:id="@+id/tv_choose_class_item"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:gravity="center_vertical"
+            android:text="message"
+            android:maxLength="140"
+            android:maxLines="5"
+            android:lineSpacingExtra="3dp"
+            android:textColor="@color/black"
+            android:textSize="18.0sp" />
+       
+    </RelativeLayout>
+
+</RelativeLayout>

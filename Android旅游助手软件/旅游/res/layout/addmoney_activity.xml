@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rela_login_main"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffeeeeee"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/skin_header_bar_bg"
+        android:gravity="center" >
+
+        <TextView
+            android:id="@+id/title_fragment_top"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="账户充值"
+            android:textColor="@color/black"
+            android:textSize="20dp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/title"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="21dp"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="当前账户余额："
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size" />
+
+        <TextView
+            android:id="@+id/tv_money"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="0.0"
+            android:textColor="#FF8000"
+            android:textSize="35dp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/ed_money_number"
+            android:layout_width="fill_parent"
+            android:layout_height="40.0dip"
+            android:layout_marginTop="20.0dip"
+            android:background="@drawable/login_editbox"
+            android:hint="请输入充值金额"
+            android:inputType="number|textPassword"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textSize="15.0sp" />
+
+        <EditText
+            android:id="@+id/ed_money_card"
+            android:layout_width="fill_parent"
+            android:layout_height="40.0dip"
+            android:layout_marginTop="20.0dip"
+            android:background="@drawable/login_editbox"
+            android:hint="请输入充值卡号"
+            android:inputType="number|textPassword"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textSize="15.0sp" />
+
+        <Button
+            android:id="@+id/btn_money_add"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="20.0dip"
+            android:background="@drawable/button_logout"
+            android:text="充　值"
+            android:textColor="@color/whites"
+            android:textSize="18.0sp" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="72dp"
+        android:layout_height="28dp"
+        android:layout_alignLeft="@+id/relativeLayout1"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="37dp"
+        android:layout_marginLeft="36dp"
+        android:src="@drawable/zfb" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imageView1"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/imageView1"
+        android:text="由支付宝提供技术支持"
+        android:textColor="@color/black" />
+
+</RelativeLayout>

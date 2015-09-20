@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+    
+    <ImageView 
+        android:layout_width="30dip"
+        android:layout_height="35dip"
+        android:layout_centerInParent="true"
+        android:src="@drawable/tv_pop_img"/>
+    <TextView
+        android:id="@+id/tv_nu_show"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:textColor="#000000"
+        android:textSize="16sp"/>
+        
+    
+
+</RelativeLayout>

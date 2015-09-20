@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="588dp"
+            android:orientation="vertical" >
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="200.0dip" >
+
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/viewPager_flag"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+                <LinearLayout
+                    android:id="@+id/viewGroup_flag"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal" >
+                </LinearLayout>
+            </FrameLayout>
+
+            <LinearLayout
+                android:id="@+id/fragsy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="100.0dip"
+                    android:layout_marginTop="5.0dip"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:id="@+id/a"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1.0"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/image1" />
+
+                    <ImageView
+                        android:id="@+id/b"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1.0"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/image2" />
+
+                    <ImageView
+                        android:id="@+id/c"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1.0"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/image3" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginTop="5.0dip"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="100.0dip"
+                        android:orientation="horizontal" >
+
+                        <ImageView
+                            android:id="@+id/d"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="1.0"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/image5" />
+
+                        <ImageView
+                            android:id="@+id/e"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="1.0"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/image6" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/f"
+                    android:layout_width="fill_parent"
+                    android:layout_height="120.0dip"
+                    android:layout_marginTop="5.0dip"
+                    android:background="@drawable/image13"
+                    android:scaleType="fitXY" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginTop="5.0dip"
+                    android:background="@drawable/zhangge_bg"
+                    android:orientation="vertical"
+                    android:paddingBottom="5.0dip" >
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5.0dip"
+                        android:layout_marginLeft="10.0dip"
+                        android:layout_marginTop="5.0dip"
+                        android:text="主题馆"
+                        android:textColor="@color/black"
+                        android:textSize="17.0sp" />
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="80.0dip"
+                        android:layout_marginLeft="5.0dip"
+                        android:layout_marginRight="5.0dip"
+                        android:layout_marginTop="5.0dip"
+                        android:layout_weight="1.0"
+                        android:orientation="horizontal" >
+
+                        <ImageView
+                            android:id="@+id/g"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="5.0dip"
+                            android:layout_weight="1.0"
+                            android:background="@drawable/image14" />
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2.0"
+                            android:orientation="vertical" >
+
+                            <ImageView
+                                android:id="@+id/h"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1.0"
+                                android:background="@drawable/image15" />
+
+                            <ImageView
+                                android:id="@+id/i"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1.0"
+                                android:background="@drawable/image155" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="80.0dip"
+                        android:layout_marginLeft="5.0dip"
+                        android:layout_marginRight="5.0dip"
+                        android:layout_marginTop="5.0dip"
+                        android:layout_weight="1.0"
+                        android:orientation="horizontal" >
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2.0"
+                            android:orientation="vertical" >
+
+                            <ImageView
+                                android:id="@+id/j"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1.0"
+                                android:background="@drawable/image111" />
+
+                            <ImageView
+                                android:id="@+id/k"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1.0"
+                                android:background="@drawable/image18" />
+                        </LinearLayout>
+
+                        <ImageView
+                            android:id="@+id/l"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_marginRight="5.0dip"
+                            android:layout_weight="1.0"
+                            android:background="@drawable/image16"
+                            android:scaleType="fitXY" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

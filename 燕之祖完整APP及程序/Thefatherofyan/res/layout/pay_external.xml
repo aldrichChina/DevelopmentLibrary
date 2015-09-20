@@ -1,0 +1,124 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white" >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="@drawable/zhifubaommbj"
+        android:layout_alignParentTop="true">
+        
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:text="请支付" />
+
+ <TextView
+     android:id="@+id/product_subject"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_centerHorizontal="true"
+     android:layout_centerVertical="true"
+     android:text="燕窝印象" />
+
+ <ImageView
+     android:id="@+id/imageView3"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_alignTop="@+id/product_subject"
+     android:layout_marginRight="16dp"
+     android:layout_toLeftOf="@+id/product_price"
+     android:src="@drawable/zhifubaojqtb" />
+
+ <TextView
+     android:id="@+id/product_price"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_alignParentRight="true"
+     android:layout_alignTop="@+id/imageView3"
+     android:layout_marginRight="14dp"
+     android:text="323" />
+
+         >
+    </RelativeLayout>
+    <Button
+        android:id="@+id/pay"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_margin="60dp"
+        android:background="@drawable/paytreasurbuttonbackground"
+        android:onClick="pay"
+        android:text="立即付款"
+        android:textColor="@color/white"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imageView1"
+        android:layout_centerHorizontal="true"
+        android:text="燕窝印象快捷支付服务" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="58dp"
+        android:layout_height="58dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="56dp"
+        android:layout_toLeftOf="@+id/textView2"
+        android:src="@drawable/zhi" />
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/pay"
+        android:layout_alignParentLeft="true"
+        android:padding="5dp"
+        android:src="@drawable/xqdx" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/pay"
+        android:padding="5dp"
+        android:src="@drawable/xqdx" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/pay"
+        android:layout_below="@+id/imageView2"
+        android:layout_marginTop="54dp"
+        android:text="更多支付方式敬请期待!" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_alignTop="@+id/imageView1"
+        android:text="快捷支付"
+        android:textColor="@color/black"
+        android:textSize="15sp" />
+
+    <Button
+        android:id="@+id/pay_external_btn_Toviewtheorder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/imageView2"
+        android:layout_marginBottom="21dp"
+        android:layout_toRightOf="@+id/textView2"
+        android:background="@android:color/transparent"
+        android:text="查看订单" />
+
+</RelativeLayout>

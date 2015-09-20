@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_goods_cart_item"
+    android:descendantFocusability= "blocksDescendants"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:padding="20dip" >
+
+    <CheckBox
+        android:id="@+id/cb_check"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:button="@drawable/goods_checkbox_selector"
+        android:checked="false" />
+
+    <ImageView
+        android:id="@+id/img_goods"
+        android:layout_width="70.0dip"
+        android:layout_height="70.0dip"
+        android:layout_marginLeft="10.0dip"
+        android:contentDescription="@string/app_name"
+        android:scaleType="fitXY"
+        android:src="@drawable/bg_default" />
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="170dip"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dip"
+        android:ellipsize="end"
+        android:gravity="left|center"
+        android:lines="4"
+        android:textColor="@color/black"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/tv_GoodsName"
+        android:layout_width="170dip"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dip"
+        android:ellipsize="end"
+        android:gravity="left|center"
+        android:lines="4"
+        android:textColor="@color/black"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/tv_price_score"
+        android:layout_width="100dip"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:textSize="14sp" />
+
+    <LinearLayout
+        android:layout_width="100dip"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <ImageButton
+            android:id="@+id/num_des"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/btn_des_state" />
+
+        <TextView
+            android:id="@+id/tv_num"
+            android:layout_width="38dip"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edit_num_state"
+            android:gravity="center"
+            android:text="1"
+            android:textColor="#000000"
+            android:textSize="14sp" />
+
+        <ImageButton
+            android:id="@+id/num_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/btn_add_state" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_goods_price"
+        android:layout_width="100dip"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:textSize="14sp" />
+
+    <Button 
+        android:id="@+id/btn_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dip"
+        android:background="@null"
+        android:text="删除"
+        />
+
+</LinearLayout>

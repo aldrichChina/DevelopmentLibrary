@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/login_bg" >
+
+    <!--
+         <include
+        android:id="@+id/loginMenu_include"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/loginmenu" />
+    -->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <RelativeLayout
+            android:id="@+id/left_layout"
+            android:layout_width="120.0dip"
+            android:layout_height="fill_parent" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/tv1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50.0dip"
+                    android:layout_gravity="center"
+                    android:background="@drawable/product_text_bg_down"
+                    android:gravity="center"
+                    android:text="燕窝"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/mainText" />
+
+                <TextView
+                    android:id="@+id/register1_line"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.100000024dip"
+                    android:background="@color/black" />
+
+                <TextView
+                    android:id="@+id/tv2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50.0dip"
+                    android:layout_gravity="center"
+                    android:background="@drawable/product_text_bg"
+                    android:gravity="center"
+                    android:text="燕窝滤材"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/mainText" />
+
+                <TextView
+                    android:id="@+id/register1_line"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.100000024dip"
+                    android:background="@color/black" />
+
+                <TextView
+                    android:id="@+id/tv3"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50.0dip"
+                    android:layout_gravity="center"
+                    android:background="@drawable/product_text_bg"
+                    android:gravity="center"
+                    android:text="燕窝器材"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/mainText" />
+
+                <TextView
+                    android:id="@+id/register1_line"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.100000024dip"
+                    android:background="@color/black" />
+
+                <TextView
+                    android:id="@+id/tv4"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50.0dip"
+                    android:layout_gravity="center"
+                    android:background="@drawable/product_text_bg"
+                    android:gravity="center"
+                    android:text="燕窝药剂"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/mainText" />
+
+                <TextView
+                    android:id="@+id/register1_line"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.100000024dip"
+                    android:background="@color/black" />
+
+                <TextView
+                    android:id="@+id/tv5"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50.0dip"
+                    android:layout_gravity="center"
+                    android:background="@drawable/product_text_bg"
+                    android:gravity="center"
+                    android:text="燕窝箱/造景"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/mainText" />
+
+                <TextView
+                    android:id="@+id/register1_line"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.100000024dip"
+                    android:background="@color/black" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/sanjiao"
+                android:layout_width="10.0dip"
+                android:layout_height="15.0dip"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="15.0dip"
+                android:background="@drawable/product_snjiao" />
+
+            <ImageView
+                android:id="@+id/sanjiao2"
+                android:layout_width="10.0dip"
+                android:layout_height="15.0dip"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="65.0dip"
+                android:background="@drawable/product_snjiao"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/sanjiao3"
+                android:layout_width="10.0dip"
+                android:layout_height="15.0dip"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="115.0dip"
+                android:background="@drawable/product_snjiao"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/sanjiao4"
+                android:layout_width="10.0dip"
+                android:layout_height="15.0dip"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="165.0dip"
+                android:background="@drawable/product_snjiao"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/sanjiao5"
+                android:layout_width="10.0dip"
+                android:layout_height="15.0dip"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="215.0dip"
+                android:background="@drawable/product_snjiao"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+      <!--   <ExpandableListView
+            android:id="@+id/expandlistview"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@color/white"
+            android:cacheColorHint="#00000000"
+            android:childDivider="@color/lightgray"
+            android:divider="@color/transparent"
+            android:dividerHeight="0.6dip"
+            android:drawSelectorOnTop="false"
+            android:fadingEdge="none"
+            android:groupIndicator="@null"
+            android:listSelector="#00000000"
+            android:scrollbars="none" /> -->
+        <WebView 
+            android:id="@+id/fl_wv_fl"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            
+            />
+    </LinearLayout>
+
+</RelativeLayout>

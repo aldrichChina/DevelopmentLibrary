@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/login_bg"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="200.0dip" >
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/pager"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="40.0dip"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/product_line_bg"
+            android:gravity="right|center" >
+
+            <ImageView
+                android:layout_width="30.0dip"
+                android:layout_height="30.0dip"
+                android:layout_marginRight="20.0dip"
+                android:background="@drawable/product_collect_icon" />
+
+            <ImageView
+                android:layout_width="30.0dip"
+                android:layout_height="30.0dip"
+                android:layout_marginRight="20.0dip"
+                android:background="@drawable/product_incudle_icon" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="60.0dip"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:padding="10.0dip" >
+
+        <Button
+            android:layout_width="130.0dip"
+            android:layout_height="40.0dip"
+            android:layout_marginRight="10.0dip"
+            android:background="@drawable/product_pay"
+            android:text="加入购物车"
+            android:textColor="@color/white"
+            android:textSize="@dimen/mainText" />
+
+        <Button
+            android:layout_width="130.0dip"
+            android:layout_height="40.0dip"
+            android:layout_marginRight="10.0dip"
+            android:background="@drawable/product_shop_car"
+            android:text="立即购买"
+            android:textColor="@color/white"
+            android:textSize="@dimen/mainText" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@id/register1_line"
+        android:layout_width="fill_parent"
+        android:layout_height="0.100000024dip"
+        android:background="@color/black" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20.0dip"
+        android:layout_marginTop="10.0dip"
+        android:gravity="center" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10.0dip"
+            android:text="商品品牌:"
+            android:textColor="@color/black"
+            android:textSize="@dimen/mainText" />
+
+        <TextView
+            android:id="@+id/brand"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10.0dip"
+            android:text="Merlon"
+            android:textColor="@color/black"
+            android:textSize="@dimen/mainText" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20.0dip"
+        android:layout_marginTop="5.0dip"
+        android:gravity="center" >
+
+        <TextView
+            android:id="@+id/number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10.0dip"
+            android:text="商品编号:"
+            android:textColor="@color/black"
+            android:textSize="@dimen/mainText" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10.0dip"
+            android:text="1896014"
+            android:textColor="@color/black"
+            android:textSize="@dimen/mainText" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20.0dip"
+        android:layout_marginTop="5.0dip" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10.0dip"
+            android:text="售        价:"
+            android:textColor="@color/black"
+            android:textSize="@dimen/mainText" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10.0dip"
+            android:gravity="left"
+            android:text="￥42"
+            android:textColor="@color/black"
+            android:textSize="@dimen/mainText" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20.0dip"
+        android:layout_marginTop="5.0dip" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10.0dip"
+            android:text="市  场  价:"
+            android:textColor="@color/black"
+            android:textSize="@dimen/mainText" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10.0dip"
+            android:gravity="left"
+            android:text="￥69"
+            android:textColor="@color/black"
+            android:textSize="@dimen/mainText" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20.0dip"
+        android:layout_marginTop="5.0dip" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10.0dip"
+            android:text="配送服务:"
+            android:textColor="@color/black"
+            android:textSize="@dimen/mainText" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10.0dip"
+            android:text="下单后立即发货，由AIZ负责发货"
+            android:textColor="@color/black"
+            android:textSize="@dimen/mainText" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20.0dip"
+        android:layout_marginTop="5.0dip" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10.0dip"
+            android:text="温馨提示:"
+            android:textColor="@color/black"
+            android:textSize="@dimen/mainText" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10.0dip"
+            android:text="【支付方式】限时特卖商品支持在线支付或货到支付，但部分地区，部分商品不支持货到付款，在线支付必须三个小时内支付完。"
+            android:textColor="@color/black"
+            android:textSize="@dimen/mainText" />
+    </LinearLayout>
+
+</LinearLayout>

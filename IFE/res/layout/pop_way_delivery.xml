@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="80dip"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_black"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/btn_card"
+        android:layout_width="80dip"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:gravity="center"
+        android:paddingBottom="5dip"
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip"
+        android:paddingTop="5dip"
+        android:text="@string/pay_card"
+        android:textColor="@color/black"
+        android:visibility="gone"
+        android:textSize="14sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1.0dip"
+        android:background="@color/black" />
+
+    <Button
+        android:id="@+id/btn_score"
+        android:layout_width="80dip"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:gravity="center"
+        android:paddingBottom="5dip"
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip"
+        android:paddingTop="5dip"
+        android:text="@string/pay_score"
+        android:textColor="@color/black"
+        android:visibility="gone"
+        android:textSize="14sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1.0dip"
+        android:background="@color/black" />
+
+    <Button
+        android:id="@+id/btn_cash"
+        android:layout_width="80dip"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:gravity="center"
+        android:paddingBottom="5dip"
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip"
+        android:paddingTop="5dip"
+        android:text="@string/pay_cash"
+        android:textColor="@color/black"
+        android:visibility="gone"
+        android:textSize="14sp" />
+
+</LinearLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="5dip">
+    
+     <ImageView
+        android:id="@+id/img_goods"
+        android:layout_width="62dip"
+        android:layout_height="62dip"
+        android:contentDescription="@string/app_name"
+        android:background="@drawable/bg_grey"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:scaleType="fitXY"
+        android:src="@drawable/bg_default"
+        android:paddingTop="1dip" />
+</RelativeLayout>

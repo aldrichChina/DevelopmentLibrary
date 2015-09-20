@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/login_bg"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/loginMenu_include"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/loginmenu" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:layout_width="120.0dip"
+            android:layout_height="120.0dip"
+            android:layout_marginTop="100.0dip"
+            android:background="@drawable/gift_icon" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10.0dip"
+            android:text="暂无礼品卡"
+            android:textColor="@color/black"
+            android:textSize="25.0sp" />
+    </LinearLayout>
+
+</LinearLayout>

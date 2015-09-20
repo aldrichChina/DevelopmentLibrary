@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    	<TextView
+        android:id="@+id/movie_top_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="49dip"
+        android:text="电影名"
+        android:textSize="22sp"
+       />
+
+    <RelativeLayout
+        android:id="@+id/movie_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dip"
+        android:layout_marginLeft="49dip"
+        android:layout_marginRight="49dip"
+        android:layout_marginTop="30dp" >
+		
+        <ImageView
+            
+            android:id="@+id/movie_img"
+            android:layout_width="195dip"
+            android:layout_height="250dip"
+            android:layout_marginRight="23dip"
+            android:background="@color/transparent_20_white"
+            android:scaleType="fitCenter"
+            android:src="@drawable/default_400" />
+
+        <ImageView
+            android:id="@+id/movie_img_forground"
+            android:layout_width="195dip"
+            android:layout_height="250dip"
+            android:layout_marginRight="23dip"
+            android:scaleType="fitXY"
+            android:src="@drawable/movie_forground" />
+
+        <RelativeLayout
+            android:id="@+id/movie_detail"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignBottom="@id/movie_img"
+            android:layout_alignTop="@id/movie_img"
+            android:layout_toRightOf="@id/movie_img" >
+
+            <RelativeLayout
+                android:id="@+id/movie_des"
+                android:layout_width="match_parent"
+                android:layout_height="137dip"
+                android:layout_below="@id/title"
+                android:layout_marginBottom="15dip"
+                android:background="@drawable/movie_des_background" >
+
+                <LinearLayout
+                    android:id="@+id/movie_play_list"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15dip"
+                    android:orientation="horizontal" />
+
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/tv_play_list"
+                    android:layout_width="195dip"
+                    android:layout_height="56dip"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginBottom="23dip"
+                    android:layout_marginRight="15dip"
+                    android:layout_marginTop="15dip" />
+
+                <LinearLayout
+                    android:id="@+id/pages"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@id/tv_play_list"
+                    android:layout_marginRight="20dip"
+                    android:orientation="horizontal" />
+
+                <TextView
+                    android:id="@+id/tv_basic_info"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="11dip"
+                    android:layout_marginTop="8dip"
+                    android:layout_toLeftOf="@id/tv_play_list"
+                    android:lineSpacingMultiplier="2"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/movie_basic_info"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="11dip"
+                    android:layout_marginTop="8dip"
+                    android:layout_toLeftOf="@id/movie_play_list"
+                    android:lineSpacingMultiplier="2"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/movie_des"
+                android:scrollbarStyle="outsideInset"
+                android:scrollbarThumbVertical="@drawable/scrollbar" >
+
+                <TextView
+                    android:id="@+id/movie_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:lineSpacingMultiplier="1.5"
+                    android:paddingRight="8dip"
+                    android:textSize="14sp" />
+            </ScrollView>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <com.fairlink.passenger.view.HorizontalListView
+        android:id="@+id/movie_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/movie_info"
+        android:layout_marginLeft="60dip"
+        android:layout_marginRight="60dip" />
+
+</RelativeLayout>

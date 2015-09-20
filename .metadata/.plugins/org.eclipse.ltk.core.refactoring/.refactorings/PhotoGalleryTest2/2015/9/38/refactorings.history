@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;PhotoGalleryTest2/res/layout/activity_photo_gallery.xml&apos; to &apos;fragment_photo_gallery.xml&apos;" description="Rename resource &apos;activity_photo_gallery.xml&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="res/layout/activity_photo_gallery.xml" name="fragment_photo_gallery.xml" stamp="1442182481707" updateReferences="true"/>
+</session>

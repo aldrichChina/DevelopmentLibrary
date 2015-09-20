@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Convert local variable &apos;com.jia.http01_test.MainActivity.onCreate().button&apos; in &apos;com.jia.http01_test.MainActivity.onCreate()&apos; to field&#x0D;&#x0A;- Original project: &apos;Http01_test&apos;&#x0D;&#x0A;- Original element: &apos;com.jia.http01_test.MainActivity.onCreate().button&apos;&#x0D;&#x0A;- Field name: &apos;button&apos;&#x0D;&#x0A;- Initialize field in method&#x0D;&#x0A;- Declared visibility: &apos;private&apos;" description="Convert local variable &apos;button&apos; to field" final="false" flags="2" id="org.eclipse.jdt.ui.promote.temp" initialize="1" input="/src&lt;com.jia.http01_test{MainActivity.java" name="button" selection="341 45" stamp="1433025155668" static="false" version="1.0" visibility="2"/>
+</session>
